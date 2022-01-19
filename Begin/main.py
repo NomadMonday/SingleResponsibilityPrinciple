@@ -10,15 +10,18 @@ def main():
 
     # Checks to be sure the first and last names are valid
     if not user.first_name.strip():
-        input("You did not give us a valid first name!")
+        print("You did not give us a valid first name!")
+        input()
         return
 
     if not user.last_name.strip():
-        input("You did not give us a valid last name!")
+        print("You did not give us a valid last name!")
+        input()
         return
 
     # Create a username for the person
-    input(f"Your username is {user.first_name[0]}{user.last_name}")
+    print(f"Your username is {user.first_name[0]}{user.last_name}")
+    input()
 
 if __name__ == "__main__":
     main()
