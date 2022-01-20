@@ -1,6 +1,7 @@
 from standard_messages import *
 from person_data_capture import *
 from person_validator import *
+from account_generator import *
 
 def main():
     welcome_message()
@@ -11,8 +12,8 @@ def main():
         end_application()
         return
 
-    # Create a username for the person
-    print(f"Your username is {user.first_name[0]}{user.last_name}")
+    create_account(user)
+    
     end_application()
 
 if __name__ == "__main__":
