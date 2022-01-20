@@ -1,13 +1,10 @@
-from person import Person
 from standard_messages import *
+from person_data_capture import *
 
 def main():
     welcome_message()
 
-    # Ask for user information
-    user = Person()
-    user.first_name = input("What is your first name: ")
-    user.last_name = input("What is your last name: ")
+    user = capture_person_data()
 
     # Checks to be sure the first and last names are valid
     if not user.first_name.strip():
