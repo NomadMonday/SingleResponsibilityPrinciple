@@ -1,7 +1,8 @@
 from person import Person
+from standard_messages import *
 
 def main():
-    print("Welcome to my application!")
+    welcome_message()
 
     # Ask for user information
     user = Person()
@@ -11,17 +12,17 @@ def main():
     # Checks to be sure the first and last names are valid
     if not user.first_name.strip():
         print("You did not give us a valid first name!")
-        input()
+        end_application()
         return
 
     if not user.last_name.strip():
         print("You did not give us a valid last name!")
-        input()
+        end_application()
         return
 
     # Create a username for the person
     print(f"Your username is {user.first_name[0]}{user.last_name}")
-    input()
+    end_application()
 
 if __name__ == "__main__":
     main()
