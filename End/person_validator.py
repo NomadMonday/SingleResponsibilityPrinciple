@@ -1,6 +1,7 @@
+from person import Person
 from standard_messages import display_validation_error
 
-def validate_person(person):
+def validate_person(person: Person) -> bool:
     """Checks to be sure the first and last names are valid."""
 
     if not person.first_name.strip():

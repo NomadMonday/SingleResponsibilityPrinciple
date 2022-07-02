@@ -1,6 +1,6 @@
 from person import Person
 
-def capture_person_data():
+def capture_person_data() -> Person:
     """Asks for user information and returns a Person object."""
 
     user = Person()
